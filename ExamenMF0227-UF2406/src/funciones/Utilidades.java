@@ -1,10 +1,24 @@
+/**
+ * Clase Utilidades
+ */
 package funciones;
-
+/**
+ * Clase que modela la función devuelveNota
+ * <p>@author Araceli Cuadra</p>
+ *
+ */
 public class Utilidades {
 
-	
+	/**
+	 * Método al que le pasamos por parámetro una nota media y nos devuelve
+	 * un String indicandonos si tenemos Matrícula, Suspenso, Bien, Notable 
+	 * o Sobresaliente.
+	 * @param nota double, número que es la nota
+	 * @return String descripción de la nota que puede ser Matrícula, Suspenso, Bien, Notable
+	 * o Sobresaliente.
+	 */
 
-	public String devuelveNota(double nota) {
+	public static String devuelveNota(double nota) {
 		String descripcion = "Matrícula";
 		
 		if (nota<0.0 || nota >10) {
