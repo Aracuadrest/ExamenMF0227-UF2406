@@ -16,6 +16,7 @@ public class Utilidades {
 	 * @param nota double, número que es la nota
 	 * @return String descripción de la nota que puede ser Matrícula, Suspenso, Bien, Notable
 	 * o Sobresaliente.
+	 * @throws ArithmeticException que se lanza si la nota es inferior a 0 o superior a 10.
 	 */
 
 	public static String devuelveNota(double nota) {
